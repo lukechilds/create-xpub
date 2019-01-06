@@ -34,10 +34,9 @@ Pass in version bytes for a different network:
 
 ```js
 const createXpub = require('create-xpub');
-const TESTNET = 0x043587CF;
 
 const tpub = createXpub({
-  networkVersion: TESTNET,
+  networkVersion: createXpub.testnet,
   depth: 3,
   childNumber: 2147483648,
   chainCode: '84cf7d9029cdd9fcadbb3717fd92ec0db7d7d9787c57c13c08fc887c389b566b',
@@ -98,6 +97,14 @@ Type: `string`<br>
 Default: `undefined`
 
 The public key in compressed or uncompressed form.
+
+### createXpub.mainnet
+
+Mainnet (xpub) version bytes: `0x0488B21E`
+
+### createXpub.testnet
+
+Testnet (tpub) version bytes: `0x043587CF`
 
 ## License
 

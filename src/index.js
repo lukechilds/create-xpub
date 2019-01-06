@@ -3,6 +3,7 @@ const bs58check = require('bs58check');
 const {sha256, ripemd160} = require('hash.js');
 
 const XPUB = 0x0488B21E;
+const TPUB = 0x043587CF;
 
 const compressPublicKey = publicKey => {
 	if (publicKey.startsWith('02') || publicKey.startsWith('03')) {
@@ -54,5 +55,8 @@ const createXpub = ({networkVersion = XPUB, depth, childNumber, chainCode, publi
 
 	return bs58check.encode(xpub);
 };
+
+createXpub.mainnet = XPUB;
+createXpub.testnet = TPUB;
 
 module.exports = createXpub;

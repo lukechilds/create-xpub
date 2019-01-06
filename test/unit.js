@@ -1,7 +1,6 @@
 import test from 'ava';
 import createXpub from '..';
 
-const TPUB = 0x043587CF;
 const xpubTestParams = {
 	depth: 3,
 	childNumber: 2147483648,
@@ -23,7 +22,7 @@ test('createXpub is serialised correctly', t => {
 test('Different network version bytes can be passed in', t => {
 	const tpub = createXpub({
 		...xpubTestParams,
-		networkVersion: TPUB
+		networkVersion: createXpub.testnet
 	});
 	t.is(tpub, expectedTpub);
 });
