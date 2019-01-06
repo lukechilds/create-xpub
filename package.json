@@ -1,6 +1,6 @@
 {
   "name": "create-xpub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a BIP32 extended public key",
   "main": "src/index.js",
   "engines": {
