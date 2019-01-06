@@ -6,6 +6,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/lukechilds/create-xpub/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/create-xpub?branch=master)
 [![npm](https://img.shields.io/npm/v/create-xpub.svg)](https://www.npmjs.com/package/create-xpub)
 
+Creates a Base58 encoded extended public key (xpub) for use in a [BIP32 hierarchical deterministic wallet](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
+
 ## Install
 
 ```shell
