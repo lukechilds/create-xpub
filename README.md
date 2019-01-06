@@ -83,14 +83,14 @@ The depth of the derived key.
 Type: `number`<br>
 Default: `undefined`
 
-The child number
+The child number.
 
 ##### chainCode
 
 Type: `String`<br>
 Default: `undefined`
 
-The chain code
+The chain code.
 
 ##### publicKey
 
