@@ -67,11 +67,9 @@ Consult [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 
 ##### networkVersion
 
 Type: `Number`<br>
-Default: `0x0488B21E`
+Default: `0x0488B21E` (mainnet)
 
 Network version bytes.
-
-Default is `0x0488B21E` for mainnet.
 
 ##### depth
 
