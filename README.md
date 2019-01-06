@@ -46,9 +46,9 @@ const xpub = createXpub({
 // => tpubDD3z8RPRoNYRcwRJ9JPyPgkgdiyE6Eghiud3R8ThkD2hdAXgTJh7WUTEg6mxskyBP3Fb1NnwahnwgdgC3DgYe3MRfZd2NYLWLkmBn7UWZXk'
 ```
 
-## Tip
+### Tip
 
-If you're working with ledgerjs you can pass the output of [`getwalletpublickey()`](http://ledgerhq.github.io/ledgerjs/docs/#btcgetwalletpublickey) almost directly in.
+If you're working with ledgerjs you can pass the output of [`getWalletPublicKey()`](http://ledgerhq.github.io/ledgerjs/docs/#btcgetwalletpublickey) almost directly in.
 
 ## API
 
