@@ -1,3 +1,4 @@
+const ow = require('ow');
 const bs58check = require('bs58check');
 const {sha256, ripemd160} = require('hash.js');
 
@@ -32,6 +33,12 @@ const getPublicKeyFingerprint = publicKey => {
 };
 
 const createXpub = ({network = XPUB, depth, childnum, chainCode, publicKey}) => {
+	ow(network, ow.number.label('network'));
+	ow(depth, ow.number.label('depth'));
+	ow(childnum, ow.number.label('childnum'));
+	ow(chainCode, ow.string.label('chainCode'));
+	ow(publicKey, ow.string.label('publicKey'));
+
 	publicKey = compressPublicKey(publicKey);
 	const fingerprint = getPublicKeyFingerprint(publicKey);
 
