@@ -87,14 +87,14 @@ The child number.
 
 ##### chainCode
 
-Type: `String`<br>
+Type: `string`<br>
 Default: `undefined`
 
 The chain code.
 
 ##### publicKey
 
-Type: `String`<br>
+Type: `string`<br>
 Default: `undefined`
 
 The public key in compressed or uncompressed form.
