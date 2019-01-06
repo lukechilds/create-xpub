@@ -46,6 +46,55 @@ const xpub = createXpub({
 // => tpubDD3z8RPRoNYRcwRJ9JPyPgkgdiyE6Eghiud3R8ThkD2hdAXgTJh7WUTEg6mxskyBP3Fb1NnwahnwgdgC3DgYe3MRfZd2NYLWLkmBn7UWZXk'
 ```
 
+## API
+
+### createXpub(options)
+
+Returns a Base58 encoded extended public key.
+
+#### options
+
+Type: `Object`
+
+An object containing the following properties of the derivation path.
+
+##### network
+
+Type: `Number`<br>
+Default: `0x0488B21E`
+
+Network version bytes.
+
+Default is `0x0488B21E` for mainnet.
+
+##### depth
+
+Type: `Number`<br>
+Default: `undefined`
+
+The depth of the derived key.
+
+##### childnum
+
+Type: `Number`<br>
+Default: `undefined`
+
+The child number
+
+##### chainCode
+
+Type: `String`<br>
+Default: `undefined`
+
+The chain code
+
+##### publicKey
+
+Type: `String`<br>
+Default: `undefined`
+
+The public key in compressed or uncompressed form.
+
 ## License
 
 MIT © Luke Childs
