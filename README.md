@@ -30,7 +30,7 @@ const xpub = createXpub({
 // => 'xpub6CgMcBZk66ayM9ESh7QtBmRKJbsa6rBeBH2k4aQZQJGossryP5r2N2nQS4hBMG1wb8igPoH53bxtzTBaeMqJkbu8bxsih1gGkoAn23Nr8VP'
 ```
 
-Pass in version bytes for a different networkVersion:
+Pass in version bytes for a different network:
 
 ```js
 const createXpub = require('create-xpub');
