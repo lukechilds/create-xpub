@@ -24,11 +24,12 @@ const getPublicKeyFingerprint = publicKey => {
 	const publicKeyHash = hash160(publicKey);
 
 	return (
-		((publicKeyHash[0] << 24) |
-      (publicKeyHash[1] << 16) |
-      (publicKeyHash[2] << 8) |
-      publicKeyHash[3]) >>>
-    0
+		(
+			(publicKeyHash[0] << 24) |
+			(publicKeyHash[1] << 16) |
+			(publicKeyHash[2] << 8) |
+			publicKeyHash[3]
+		) >>> 0
 	);
 };
 
