@@ -58,6 +58,8 @@ Type: `Object`
 
 An object containing the following properties of the derivation path.
 
+Consult [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) for an in-depth explanation on these properties.
+
 ##### network
 
 Type: `Number`<br>
