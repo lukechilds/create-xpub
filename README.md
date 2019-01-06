@@ -23,23 +23,23 @@ const createXpub = require('create-xpub');
 
 const xpub = createXpub({
   depth: 3,
-  childnum: 2147483648,
+  childNumber: 2147483648,
   publicKey: '048bcdcf59f046b13f1eb35b608d1211265fde8cc44fc7a5a7f7107c5cf238095328a0e0d7be17c7d3e48490e8c6433af6d2c3dacc687f3fecaa98a3d05f17de97',
   chainCode: '84cf7d9029cdd9fcadbb3717fd92ec0db7d7d9787c57c13c08fc887c389b566b'
 });
 // => 'xpub6CgMcBZk66ayM9ESh7QtBmRKJbsa6rBeBH2k4aQZQJGossryP5r2N2nQS4hBMG1wb8igPoH53bxtzTBaeMqJkbu8bxsih1gGkoAn23Nr8VP'
 ```
 
-Pass in version bytes for a different network:
+Pass in version bytes for a different networkVersion:
 
 ```js
 const createXpub = require('create-xpub');
 const TESTNET = 0x043587CF;
 
 const xpub = createXpub({
-  network: TESTNET,
+  networkVersion: TESTNET,
   depth: 3,
-  childnum: 2147483648,
+  childNumber: 2147483648,
   publicKey: '048bcdcf59f046b13f1eb35b608d1211265fde8cc44fc7a5a7f7107c5cf238095328a0e0d7be17c7d3e48490e8c6433af6d2c3dacc687f3fecaa98a3d05f17de97',
   chainCode: '84cf7d9029cdd9fcadbb3717fd92ec0db7d7d9787c57c13c08fc887c389b566b'
 });
@@ -64,7 +64,7 @@ An object containing the following properties of the derivation path.
 
 Consult [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) for an in-depth explanation on these properties.
 
-##### network
+##### networkVersion
 
 Type: `Number`<br>
 Default: `0x0488B21E`
@@ -80,7 +80,7 @@ Default: `undefined`
 
 The depth of the derived key.
 
-##### childnum
+##### childNumber
 
 Type: `Number`<br>
 Default: `undefined`

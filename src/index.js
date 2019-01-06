@@ -32,10 +32,10 @@ const getPublicKeyFingerprint = publicKey => {
 	);
 };
 
-const createXpub = ({network = XPUB, depth, childnum, chainCode, publicKey}) => {
-	ow(network, ow.number.label('network'));
+const createXpub = ({networkVersion = XPUB, depth, childNumber, chainCode, publicKey}) => {
+	ow(networkVersion, ow.number.label('networkVersion'));
 	ow(depth, ow.number.label('depth'));
-	ow(childnum, ow.number.label('childnum'));
+	ow(childNumber, ow.number.label('childNumber'));
 	ow(chainCode, ow.string.label('chainCode'));
 	ow(publicKey, ow.string.label('publicKey'));
 
@@ -43,10 +43,10 @@ const createXpub = ({network = XPUB, depth, childnum, chainCode, publicKey}) => 
 	const fingerprint = getPublicKeyFingerprint(publicKey);
 
 	const xpub = Buffer.from([
-		network.toString(16).padStart(8, '0'),
+		networkVersion.toString(16).padStart(8, '0'),
 		depth.toString(16).padStart(2, '0'),
 		fingerprint.toString(16).padStart(8, '0'),
-		childnum.toString(16).padStart(8, '0'),
+		childNumber.toString(16).padStart(8, '0'),
 		chainCode,
 		publicKey
 	].join(''), 'hex');
