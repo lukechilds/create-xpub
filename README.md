@@ -66,21 +66,21 @@ Consult [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) 
 
 ##### networkVersion
 
-Type: `Number`<br>
+Type: `number`<br>
 Default: `0x0488B21E` (mainnet)
 
 Network version bytes.
 
 ##### depth
 
-Type: `Number`<br>
+Type: `number`<br>
 Default: `undefined`
 
 The depth of the derived key.
 
 ##### childNumber
 
-Type: `Number`<br>
+Type: `number`<br>
 Default: `undefined`
 
 The child number
