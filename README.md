@@ -16,6 +16,8 @@ npm install create-xpub
 
 ## Usage
 
+You should familiarise yourself with [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) to understand what these arguments represent.
+
 ```js
 const createXpub = require('create-xpub');
 
