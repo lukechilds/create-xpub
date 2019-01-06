@@ -36,7 +36,7 @@ Pass in version bytes for a different networkVersion:
 const createXpub = require('create-xpub');
 const TESTNET = 0x043587CF;
 
-const xpub = createXpub({
+const tpub = createXpub({
   networkVersion: TESTNET,
   depth: 3,
   childNumber: 2147483648,
